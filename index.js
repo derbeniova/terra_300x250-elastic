@@ -670,7 +670,7 @@ if (reversed == null) { reversed = false; }
 	// tx2
 	this.tx2 = new lib.tx2();
 	this.tx2.name = "tx2";
-	this.tx2.setTransform(-192.15,-103.8,0.4464,0.4463);
+	this.tx2.setTransform(-453.05,-103.8,0.4464,0.4463);
 
 	this.timeline.addTween(cjs.Tween.get(this.tx2).wait(1));
 
@@ -703,7 +703,7 @@ if (reversed == null) { reversed = false; }
 	// ligal
 	this.ligal = new lib.ligal();
 	this.ligal.name = "ligal";
-	this.ligal.setTransform(-192.95,96.25,0.65,0.6482,0,0,0,0,0.1);
+	this.ligal.setTransform(-460.2,96.25,0.65,0.6482,0,0,0,0,0.1);
 	this.ligal.alpha = 0.7891;
 
 	this.timeline.addTween(cjs.Tween.get(this.ligal).wait(1));
@@ -720,7 +720,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.terra_300x250_2elastic = function(mode,startPosition,loop,reversed) {
+(lib.terra_300x250_3elastic = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -748,20 +748,19 @@ if (reversed == null) { reversed = false; }
 		page_body.style.width = "100%";
 		
 		var page_canvas = document.getElementsByTagName("canvas")[0]
-		//page_canvas.style.margin="auto";
 		var _this = this;
 		var tl2;
 		var bannerWidth = 960;
 		
 		function onResize() {
 			var winWidth = window.innerWidth;
-			var left = -180;
+			var left = -440;
 			
 			if(winWidth <= bannerWidth) {
 				_this.main.x = winWidth / 2;
-				if(winWidth > 440) {
-					_this.logo.x = (winWidth / 2) + 220 - 42;
-					_this.bg_blue.x = winWidth / 2 + 220 - 42;			
+				if(winWidth > 960) {
+					_this.logo.x = (winWidth / 2) + 480 - 42;
+					_this.bg_blue.x = winWidth / 2 + 480 - 42;			
 				}
 			}
 			
@@ -769,7 +768,7 @@ if (reversed == null) { reversed = false; }
 			
 			
 			
-			if(winWidth <= 440) {
+			if(winWidth <= 960) {
 				left = -winWidth / 2 + 10;
 				_this.logo.x = winWidth - 42;
 				_this.bg_blue.x = winWidth - 42;
@@ -795,7 +794,6 @@ if (reversed == null) { reversed = false; }
 			tl2 = gsap.timeline({repeat:-1});	
 			var winWidth = window.innerWidth;
 			var delta = 0;
-			//var totalDuration = tl2.totalDuration();
 		
 		
 			if(winWidth > bannerWidth) {
@@ -846,14 +844,14 @@ if (reversed == null) { reversed = false; }
 	// gazprom_logo
 	this.logo = new lib.gazprom_logo();
 	this.logo.name = "logo";
-	this.logo.setTransform(658.9,214.75,0.8963,0.8955);
+	this.logo.setTransform(918.1,214.75,0.8963,0.8955);
 
 	this.timeline.addTween(cjs.Tween.get(this.logo).wait(1));
 
 	// gazprom_logo_bg
 	this.bg_blue = new lib.bg_blue();
 	this.bg_blue.name = "bg_blue";
-	this.bg_blue.setTransform(658.9,214.75,0.2625,0.0937,0,0,0,160.1,234.8);
+	this.bg_blue.setTransform(918.1,214.75,0.2625,0.0937,0,0,0,160.1,234.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.bg_blue).wait(1));
 
